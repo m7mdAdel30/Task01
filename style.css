@@ -1,0 +1,389 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+i:hover{
+  cursor: pointer;
+}
+/*?  Start .beforHead*/
+.beforeHead{
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #000000;
+  display: flex;
+  justify-content: space-between;
+}
+/*?  End .beforHead*/
+/*!  Start .links*/
+.links{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  background-color: #ffffff;
+}
+.links a{
+  padding: 0px 25px;
+}
+.links a i{
+  color: #6c757d;
+}
+.links a i:hover{
+  color: #28a745;
+  transition: 0.5s;
+}
+/*!  End .links*/
+/*  * Start Header*/
+header .container{
+  display: flex;
+}
+header .container .logo{
+  width: 20%;
+}
+header .container .logo img{
+  padding: 25px;
+  padding-left: 40%;
+}
+header .container ul{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container ul a{
+  color: #343a40;
+  margin: 5px;
+}
+header .container ul a:first-of-type{
+  background-color: #28a745;
+  border-bottom: 5px solid #1C8314;
+  color: #ffffff;
+}
+header .container ul a:hover{
+  background-color: #28a745;
+  border-bottom: 5px solid #1C8314;
+  color: #ffffff;
+  transition: .5s;
+}
+header .container ul a li{
+  display: inline-block;
+  padding: 10px;
+  font-size: 21px;
+}
+header .container i{
+  color: #343a40;
+  margin: 50px;
+  font-size: 19px;
+}
+header .container i:hover{
+  color: #28a745;
+}
+/*  * End Header*/
+/*  ?Start Home Page*/
+.home{
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  width: 90%;
+  color: #ffffff;
+  margin-top: 100px;
+  border: 1ps solid #000000;
+}
+.home .cake {
+  background-image: url(/img/bg2.jpg.webp);
+}
+.home .noodles{
+  background-image: url(/img/bg3.jpg.webp);
+}
+.home .cake , .home .noodles{
+  width: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  margin-right: 20px;
+  box-shadow: 10px 10px  5px #000000 inset;
+  padding: 50px;
+}
+.home .cake button  , .home .noodles button , .Gluten button{
+  background-color: #28a745;
+  color: #ffffff;
+  border: 1px solid #28a745;
+  border-left: 4px solid #1C8314;
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+.home .cake button:hover , .home .noodles button:hover , .Gluten button:hover{
+  border: 1px solid #1c8314;
+  background-color: #1C8314;
+  border-left: 4px solid #28a745;
+  transition: 0.8s ease-in-out;
+}
+/*  ?End Home Page*/
+/*  *Start Receipe Page*/
+.bestReceipe{
+  margin-top: 50px;
+}
+.bestReceipe h1{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+}
+.bestReceipe .rrr{
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+.bestReceipe .rrr .r1{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.bestReceipe .rrr .r1 img{
+  width: 300px;
+  height: 300px;
+  border-bottom: 4px solid #1C8314;
+  margin: 0px auto;
+}
+.bestReceipe .rrr .r1 h3{
+  text-align: center;
+  padding: 10px 0px;
+  font-weight: 400;
+}
+.bestReceipe .rrr .r1 star{
+  text-align: center;
+  color: #ffc107;
+  font-size: 12px;
+}
+.rrr star i:hover{
+  cursor: auto  ;
+}
+.rrr h3:hover{
+  color: #1C8314;
+  cursor: pointer;
+  transition: .5s;
+}
+/*  ?Start Gluten Page*/
+.Gluten{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+  background-image: url(/img/bg3.jpg.webp);
+  color:#20c997;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Gluten p{
+  margin-top: 25px;
+}
+.Gluten button{
+  margin-top: 120px;
+}
+/*  ?End Gluten Page*/
+/*  * Start Sr Images Page*/
+.sr{
+  margin: 0px auto;
+  margin-top: 75px;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+.sr .container{
+  width: 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+.sr .container .content{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.sr .container .content star i{
+  color: #ffc107;
+}
+.sr .container .content span{
+  font-size: 14px;
+}
+.sr .container .content a{
+  color: #000;
+  font-weight: 500;
+}
+.sr .container .content a:hover{
+  color: #1c8314;
+  transition: .5s linear;
+}
+/*  *End Sr Images Page*/
+/*  !Start Form Page*/
+/*  !End Form  Page*/
+.form{
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.form .smith{
+  text-align: center;
+  width: 33%; 
+  display: flex;
+  flex-direction: column;
+  border: 10px solid #28a745;
+}
+.form .smith section{
+  padding: 20px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.form .smith section span:first-of-type{
+  font-size: 84px;
+  color: #1C8314;
+}
+.form .smith section p{
+  padding: 0px 0px;
+  font-size: 27px;
+}
+.form .smith aside{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.form .subscribe h1{
+  font-size: 22px;
+}
+.subscribe p{
+  font-size: 12px;
+  line-height: 20px;
+}
+.form .subscribe{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/add.png.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  color: #FFF;
+}
+.form .subscribe form input , .form .subscribe form button {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin: 20px 0px;
+  border: none;
+  border-left: 4px solid #1C8314;
+  outline: none;
+  font-size: 14px;
+  color: #FFF;
+}
+.form .subscribe form button{
+
+  border: 1px solid #28a745;
+  background-color: #28a745;
+  border-left: 4px solid #1C8314;
+}
+.form .subscribe form button:hover{
+  border: 1px solid #1c8314;
+  background-color: #1C8314;
+  border-left: 4px solid #28a745;
+  transition: 0.8s;
+  cursor: pointer;
+}
+.form .img {
+  width: 30%;
+}
+/*  ?End Sr Images Page*/
+.insta0 h3{
+  margin: 25px;
+  padding-left: 20px;
+}
+.follow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.follow img{
+}
+.follow img:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: .5s;
+}
+/*  *End Sr Images Page*/
+footer {
+  margin: 0px auto;
+  margin-top: 50px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+footer div:last-of-type{
+  padding-top: 20px;
+}
+footer .links a{
+  padding: 0px 20px;
+}
+footer .links{
+  width: 33%;
+}
+footer img:hover{
+  cursor: pointer;
+  transition: .5s;
+}
+footer p a{
+  color: #1c8314;
+}
+footer p a:hover{
+  transition:.5s;
+}
+/*  *End Sr Images Page*/
+/* .a{
+  --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+} */
